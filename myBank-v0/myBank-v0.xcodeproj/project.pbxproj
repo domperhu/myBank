@@ -18,6 +18,22 @@
 		14ED25832B81B67F003515C0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 14ED25822B81B67F003515C0 /* Lottie */; };
 		14ED25852B81B6A8003515C0 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25842B81B6A8003515C0 /* splash_animation.json */; };
 		14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED258A2B81BB15003515C0 /* Configuration.swift */; };
+		14ED258F2B81BD30003515C0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED258E2B81BD30003515C0 /* Login.storyboard */; };
+		14ED25912B81BD41003515C0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25902B81BD41003515C0 /* LoginView.swift */; };
+		14ED25932B81BD49003515C0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25922B81BD49003515C0 /* LoginViewController.swift */; };
+		14ED25952B81BD55003515C0 /* LoginViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25942B81BD55003515C0 /* LoginViewControllerBuilder.swift */; };
+		14ED25972B81BF2E003515C0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25962B81BF2E003515C0 /* Onboarding.storyboard */; };
+		14ED259A2B81BF4A003515C0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25992B81BF4A003515C0 /* OnboardingView.swift */; };
+		14ED259C2B81BF52003515C0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED259B2B81BF52003515C0 /* OnboardingViewController.swift */; };
+		14ED259E2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED259D2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift */; };
+		14ED25A02B81C23E003515C0 /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED259F2B81C23E003515C0 /* Memories.swift */; };
+		14ED25A32B81C9C0003515C0 /* TabBarViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25A22B81C9C0003515C0 /* TabBarViewControllerBuilder.swift */; };
+		14ED25A62B81C9D2003515C0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25A52B81C9D2003515C0 /* TabBarViewController.swift */; };
+		14ED25A82B81CA30003515C0 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25A72B81CA30003515C0 /* TabBar.storyboard */; };
+		14ED25AB2B81CACB003515C0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25AA2B81CACB003515C0 /* DashboardView.swift */; };
+		14ED25AD2B81CAD8003515C0 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25AC2B81CAD8003515C0 /* DashboardViewController.swift */; };
+		14ED25AF2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */; };
+		14ED25B12B81CCE6003515C0 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +49,22 @@
 		14ED257F2B81B657003515C0 /* SplashViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerBuilder.swift; sourceTree = "<group>"; };
 		14ED25842B81B6A8003515C0 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
 		14ED258A2B81BB15003515C0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		14ED258E2B81BD30003515C0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		14ED25902B81BD41003515C0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		14ED25922B81BD49003515C0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		14ED25942B81BD55003515C0 /* LoginViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerBuilder.swift; sourceTree = "<group>"; };
+		14ED25962B81BF2E003515C0 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		14ED25992B81BF4A003515C0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		14ED259B2B81BF52003515C0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		14ED259D2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerBuilder.swift; sourceTree = "<group>"; };
+		14ED259F2B81C23E003515C0 /* Memories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
+		14ED25A22B81C9C0003515C0 /* TabBarViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerBuilder.swift; sourceTree = "<group>"; };
+		14ED25A52B81C9D2003515C0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		14ED25A72B81CA30003515C0 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		14ED25AA2B81CACB003515C0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		14ED25AC2B81CAD8003515C0 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerBuilder.swift; sourceTree = "<group>"; };
+		14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				14ED25752B81B5E2003515C0 /* Splash */,
+				14ED25982B81BF3B003515C0 /* Onboarding */,
+				14ED258C2B81BD1C003515C0 /* Login */,
+				14ED25A12B81C9A4003515C0 /* TabBar */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -100,6 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				14ED25762B81B5F1003515C0 /* Splash.storyboard */,
+				14ED25962B81BF2E003515C0 /* Onboarding.storyboard */,
+				14ED258E2B81BD30003515C0 /* Login.storyboard */,
+				14ED25A72B81CA30003515C0 /* TabBar.storyboard */,
+				14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -134,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				14ED258A2B81BB15003515C0 /* Configuration.swift */,
+				14ED259F2B81C23E003515C0 /* Memories.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -143,6 +183,46 @@
 			children = (
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		14ED258C2B81BD1C003515C0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25902B81BD41003515C0 /* LoginView.swift */,
+				14ED25922B81BD49003515C0 /* LoginViewController.swift */,
+				14ED25942B81BD55003515C0 /* LoginViewControllerBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14ED25982B81BF3B003515C0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25992B81BF4A003515C0 /* OnboardingView.swift */,
+				14ED259B2B81BF52003515C0 /* OnboardingViewController.swift */,
+				14ED259D2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		14ED25A12B81C9A4003515C0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25A92B81CAA9003515C0 /* Dashboard */,
+				14ED25A52B81C9D2003515C0 /* TabBarViewController.swift */,
+				14ED25A22B81C9C0003515C0 /* TabBarViewControllerBuilder.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		14ED25A92B81CAA9003515C0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25AA2B81CACB003515C0 /* DashboardView.swift */,
+				14ED25AC2B81CAD8003515C0 /* DashboardViewController.swift */,
+				14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +293,10 @@
 				14ED256A2B81B5BA003515C0 /* LaunchScreen.storyboard in Resources */,
 				14ED25672B81B5BA003515C0 /* Assets.xcassets in Resources */,
 				14ED25772B81B5F1003515C0 /* Splash.storyboard in Resources */,
+				14ED25B12B81CCE6003515C0 /* Dashboard.storyboard in Resources */,
+				14ED25972B81BF2E003515C0 /* Onboarding.storyboard in Resources */,
+				14ED258F2B81BD30003515C0 /* Login.storyboard in Resources */,
+				14ED25A82B81CA30003515C0 /* TabBar.storyboard in Resources */,
 				14ED25852B81B6A8003515C0 /* splash_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,12 +308,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ED25A32B81C9C0003515C0 /* TabBarViewControllerBuilder.swift in Sources */,
+				14ED25AB2B81CACB003515C0 /* DashboardView.swift in Sources */,
 				14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */,
+				14ED259E2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift in Sources */,
+				14ED25912B81BD41003515C0 /* LoginView.swift in Sources */,
 				14ED255E2B81B5B9003515C0 /* AppDelegate.swift in Sources */,
+				14ED259A2B81BF4A003515C0 /* OnboardingView.swift in Sources */,
+				14ED25AF2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift in Sources */,
 				14ED25602B81B5B9003515C0 /* SceneDelegate.swift in Sources */,
+				14ED25952B81BD55003515C0 /* LoginViewControllerBuilder.swift in Sources */,
+				14ED25932B81BD49003515C0 /* LoginViewController.swift in Sources */,
 				14ED257C2B81B623003515C0 /* SplashView.swift in Sources */,
 				14ED257E2B81B640003515C0 /* SplashViewController.swift in Sources */,
+				14ED259C2B81BF52003515C0 /* OnboardingViewController.swift in Sources */,
+				14ED25A02B81C23E003515C0 /* Memories.swift in Sources */,
+				14ED25A62B81C9D2003515C0 /* TabBarViewController.swift in Sources */,
 				14ED25802B81B657003515C0 /* SplashViewControllerBuilder.swift in Sources */,
+				14ED25AD2B81CAD8003515C0 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import UIKit
 import Lottie
 
 protocol SplashViewDelegate: NSObjectProtocol {
-    func splashViewFinishLottieAnimation(_ splashView: SplashView)
+    func splashViewFinishLottieAnimation(view: SplashView)
 }
 
 class SplashView: UIView {
@@ -26,7 +26,7 @@ class SplashView: UIView {
     
     private func startAnimation() {
         self.animationView.play { isFinish in
-            isFinish ? self.delegate?.splashViewFinishLottieAnimation(self) : nil
+            isFinish ? self.delegate?.splashViewFinishLottieAnimation(view: self) : nil
         }
     }
 }

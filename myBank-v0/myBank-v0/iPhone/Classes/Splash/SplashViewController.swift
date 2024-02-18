@@ -16,11 +16,16 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         self.splashView?.delegate = self
     }
+    
+    private func goTo() {
+        // TODO: Fix login
+        // let controller = Memories.Onboarding.wasViewed() ? LoginViewController.build() : OnboardingViewController.build()
+        self.navigationController?.pushViewController(TabBarViewController.build(), animated: true)
+    }
 }
 
 extension SplashViewController: SplashViewDelegate {
-    func splashViewFinishLottieAnimation(_ view: SplashView) {
-        //TODO: do something here
-        print(Configuration.envioronment.info.baseURL)
+    func splashViewFinishLottieAnimation(view: SplashView) {
+        self.goTo()
     }
 }
