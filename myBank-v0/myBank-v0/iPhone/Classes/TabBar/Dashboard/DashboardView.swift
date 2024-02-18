@@ -17,4 +17,5 @@ class DashboardView: UIView {
         self.lblFullName.text   = user.fullname
         self.lblEmail.text      = user.email.toSecureEmail()
     }
+    //TODO: Cambiar email por número de cuenta
 }
