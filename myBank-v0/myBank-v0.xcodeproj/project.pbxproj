@@ -34,6 +34,12 @@
 		14ED25AD2B81CAD8003515C0 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25AC2B81CAD8003515C0 /* DashboardViewController.swift */; };
 		14ED25AF2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */; };
 		14ED25B12B81CCE6003515C0 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */; };
+		14ED25B62B81D61C003515C0 /* GestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25B52B81D61C003515C0 /* GestureManager.swift */; };
+		14ED25B82B81D81F003515C0 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25B72B81D81F003515C0 /* KeyboardManager.swift */; };
+		14ED25BB2B81E6AF003515C0 /* TransfersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25BA2B81E6AF003515C0 /* TransfersView.swift */; };
+		14ED25BD2B81E6B7003515C0 /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25BC2B81E6B7003515C0 /* TransfersViewController.swift */; };
+		14ED25BF2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */; };
+		14ED25C12B81E753003515C0 /* Transfers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25C02B81E753003515C0 /* Transfers.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +71,12 @@
 		14ED25AC2B81CAD8003515C0 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerBuilder.swift; sourceTree = "<group>"; };
 		14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		14ED25B52B81D61C003515C0 /* GestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureManager.swift; sourceTree = "<group>"; };
+		14ED25B72B81D81F003515C0 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		14ED25BA2B81E6AF003515C0 /* TransfersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersView.swift; sourceTree = "<group>"; };
+		14ED25BC2B81E6B7003515C0 /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
+		14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewControllerBuilder.swift; sourceTree = "<group>"; };
+		14ED25C02B81E753003515C0 /* Transfers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transfers.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 				14ED25862B81BA1D003515C0 /* Helpers */,
 				14ED25712B81B5BD003515C0 /* iPhone */,
 				14ED25872B81BA25003515C0 /* Entities */,
+				14ED25B32B81D1A2003515C0 /* DTO */,
+				14ED25B22B81D194003515C0 /* WebServices */,
 				14ED255D2B81B5B9003515C0 /* AppDelegate.swift */,
 				14ED255F2B81B5B9003515C0 /* SceneDelegate.swift */,
 				14ED25662B81B5BA003515C0 /* Assets.xcassets */,
@@ -139,6 +153,7 @@
 				14ED258E2B81BD30003515C0 /* Login.storyboard */,
 				14ED25A72B81CA30003515C0 /* TabBar.storyboard */,
 				14ED25B02B81CCE6003515C0 /* Dashboard.storyboard */,
+				14ED25C02B81E753003515C0 /* Transfers.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -174,6 +189,8 @@
 			children = (
 				14ED258A2B81BB15003515C0 /* Configuration.swift */,
 				14ED259F2B81C23E003515C0 /* Memories.swift */,
+				14ED25B52B81D61C003515C0 /* GestureManager.swift */,
+				14ED25B72B81D81F003515C0 /* KeyboardManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -209,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				14ED25A92B81CAA9003515C0 /* Dashboard */,
+				14ED25B92B81E65D003515C0 /* Transfers */,
 				14ED25A52B81C9D2003515C0 /* TabBarViewController.swift */,
 				14ED25A22B81C9C0003515C0 /* TabBarViewControllerBuilder.swift */,
 			);
@@ -223,6 +241,30 @@
 				14ED25AE2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		14ED25B22B81D194003515C0 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		14ED25B32B81D1A2003515C0 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		14ED25B92B81E65D003515C0 /* Transfers */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25BA2B81E6AF003515C0 /* TransfersView.swift */,
+				14ED25BC2B81E6B7003515C0 /* TransfersViewController.swift */,
+				14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */,
+			);
+			path = Transfers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +337,7 @@
 				14ED25772B81B5F1003515C0 /* Splash.storyboard in Resources */,
 				14ED25B12B81CCE6003515C0 /* Dashboard.storyboard in Resources */,
 				14ED25972B81BF2E003515C0 /* Onboarding.storyboard in Resources */,
+				14ED25C12B81E753003515C0 /* Transfers.storyboard in Resources */,
 				14ED258F2B81BD30003515C0 /* Login.storyboard in Resources */,
 				14ED25A82B81CA30003515C0 /* TabBar.storyboard in Resources */,
 				14ED25852B81B6A8003515C0 /* splash_animation.json in Resources */,
@@ -317,14 +360,19 @@
 				14ED259A2B81BF4A003515C0 /* OnboardingView.swift in Sources */,
 				14ED25AF2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift in Sources */,
 				14ED25602B81B5B9003515C0 /* SceneDelegate.swift in Sources */,
+				14ED25B62B81D61C003515C0 /* GestureManager.swift in Sources */,
 				14ED25952B81BD55003515C0 /* LoginViewControllerBuilder.swift in Sources */,
 				14ED25932B81BD49003515C0 /* LoginViewController.swift in Sources */,
+				14ED25B82B81D81F003515C0 /* KeyboardManager.swift in Sources */,
+				14ED25BB2B81E6AF003515C0 /* TransfersView.swift in Sources */,
 				14ED257C2B81B623003515C0 /* SplashView.swift in Sources */,
 				14ED257E2B81B640003515C0 /* SplashViewController.swift in Sources */,
 				14ED259C2B81BF52003515C0 /* OnboardingViewController.swift in Sources */,
+				14ED25BD2B81E6B7003515C0 /* TransfersViewController.swift in Sources */,
 				14ED25A02B81C23E003515C0 /* Memories.swift in Sources */,
 				14ED25A62B81C9D2003515C0 /* TabBarViewController.swift in Sources */,
 				14ED25802B81B657003515C0 /* SplashViewControllerBuilder.swift in Sources */,
+				14ED25BF2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift in Sources */,
 				14ED25AD2B81CAD8003515C0 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

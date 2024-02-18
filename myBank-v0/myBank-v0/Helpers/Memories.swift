@@ -12,14 +12,14 @@ struct Memories {
     
     struct Onboarding {
         
-        static var userDefaultsKey: String { "welcomeWasViewed" }
+        static var userDefaultsEarnmark: String { "welcomeWasViewed" }
         
         static func wasViewed() -> Bool {
-            UserDefaults.standard.bool(forKey: self.userDefaultsKey)
+            UserDefaults.standard.bool(forKey: self.userDefaultsEarnmark)
         }
         
         static func setViewed() {
-            UserDefaults.standard.set(true, forKey: self.userDefaultsKey)
+            UserDefaults.standard.set(true, forKey: self.userDefaultsEarnmark)
         }
     }
 }

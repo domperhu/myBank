@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="icO-3b-JOV">
-                                <rect key="frame" x="12" y="450.66666666666663" width="369" height="290.66666666666663"/>
+                                <rect key="frame" x="12" y="519.33333333333337" width="369" height="290.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-db-pak">
                                         <rect key="frame" x="0.0" y="0.0" width="369" height="108.66666666666667"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My bank App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-Co-c3h">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My bank" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-Co-c3h">
                                                 <rect key="frame" x="0.0" y="0.0" width="369" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your account number and password " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgK-gH-qm3">
-                                                <rect key="frame" x="0.0" y="67.999999999999943" width="369" height="40.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="68" width="369" height="40.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iCZ-jO-TRl">
-                                        <rect key="frame" x="0.0" y="120.66666666666669" width="369" height="108"/>
+                                        <rect key="frame" x="0.0" y="120.66666666666663" width="369" height="108"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdk-7Q-pHg">
                                                 <rect key="frame" x="0.0" y="0.0" width="369" height="50"/>
@@ -53,31 +53,47 @@
                                                     <constraint firstAttribute="height" constant="50" id="Hoj-qG-4WU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-Sn-gOJ">
-                                        <rect key="frame" x="0.0" y="240.66666666666669" width="369" height="50"/>
+                                        <rect key="frame" x="0.0" y="240.66666666666663" width="369" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="YTl-pK-THb"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Ingresar"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Enter"/>
+                                        <connections>
+                                            <action selector="tabBtnLogin:" destination="5EZ-qb-Rvc" eventType="touchUpInside" id="QYQ-9z-HeC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="icO-3b-JOV" secondAttribute="trailing" constant="12" id="4IQ-qf-cFO"/>
-                            <constraint firstItem="icO-3b-JOV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="centerY" constant="12" id="AaQ-OZ-suo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="icO-3b-JOV" secondAttribute="bottom" constant="8" id="FLn-Eb-st9"/>
                             <constraint firstItem="icO-3b-JOV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="Um2-RP-MNd"/>
                         </constraints>
+                        <connections>
+                            <outlet property="anchorBottomContent" destination="FLn-Eb-st9" id="Jkq-Ay-Jui"/>
+                            <outlet property="btnLogin" destination="W5u-Sn-gOJ" id="U41-6O-jP9"/>
+                            <outlet property="txtAccountCrown" destination="Raz-Gr-V13" id="hac-nr-L4n"/>
+                            <outlet property="txtAccountNumber" destination="Cdk-7Q-pHg" id="znU-Ea-u7R"/>
+                            <outletCollection property="gestureRecognizers" destination="OOI-MG-AP2" appends="YES" id="Qqc-AN-wwa"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OOI-MG-AP2">
+                    <connections>
+                        <action selector="tabToHideKeyboard:" destination="Y6W-OH-hqX" id="Sf4-Ah-2cZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="110" y="-2"/>
         </scene>

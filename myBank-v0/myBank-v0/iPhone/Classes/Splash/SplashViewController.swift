@@ -18,9 +18,8 @@ class SplashViewController: UIViewController {
     }
     
     private func goTo() {
-        // TODO: Fix login
-        // let controller = Memories.Onboarding.wasViewed() ? LoginViewController.build() : OnboardingViewController.build()
-        self.navigationController?.pushViewController(TabBarViewController.build(), animated: true)
+        let controller = Memories.Onboarding.wasViewed() ? LoginViewController.build() : OnboardingViewController.build()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 
