@@ -14,5 +14,12 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getInformation()
+    }
+
+    private func getInformation() {
+        UserMock().GetUserMock { userResponse in
+            self.dashboardView?.setInformationFrom(userResponse.toUser)
+        }
     }
 }

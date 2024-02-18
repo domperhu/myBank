@@ -40,6 +40,13 @@
 		14ED25BD2B81E6B7003515C0 /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25BC2B81E6B7003515C0 /* TransfersViewController.swift */; };
 		14ED25BF2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */; };
 		14ED25C12B81E753003515C0 /* Transfers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25C02B81E753003515C0 /* Transfers.storyboard */; };
+		14ED25C42B81EBB1003515C0 /* userMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25C32B81EBB1003515C0 /* userMock.json */; };
+		14ED25C62B81EC7F003515C0 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25C52B81EC7F003515C0 /* UserResponse.swift */; };
+		14ED25C82B81ECCD003515C0 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25C72B81ECCD003515C0 /* FileManager.swift */; };
+		14ED25CB2B81ED3B003515C0 /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25CA2B81ED3B003515C0 /* UserMock.swift */; };
+		14ED25CD2B81ED72003515C0 /* ServicesHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25CC2B81ED72003515C0 /* ServicesHandlers.swift */; };
+		14ED25CF2B81F680003515C0 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25CE2B81F680003515C0 /* StringManager.swift */; };
+		14ED25D22B81FB6D003515C0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25D12B81FB6D003515C0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +84,13 @@
 		14ED25BC2B81E6B7003515C0 /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
 		14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewControllerBuilder.swift; sourceTree = "<group>"; };
 		14ED25C02B81E753003515C0 /* Transfers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transfers.storyboard; sourceTree = "<group>"; };
+		14ED25C32B81EBB1003515C0 /* userMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userMock.json; sourceTree = "<group>"; };
+		14ED25C52B81EC7F003515C0 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		14ED25C72B81ECCD003515C0 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		14ED25CA2B81ED3B003515C0 /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
+		14ED25CC2B81ED72003515C0 /* ServicesHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesHandlers.swift; sourceTree = "<group>"; };
+		14ED25CE2B81F680003515C0 /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
+		14ED25D12B81FB6D003515C0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +126,10 @@
 			children = (
 				14ED25862B81BA1D003515C0 /* Helpers */,
 				14ED25712B81B5BD003515C0 /* iPhone */,
-				14ED25872B81BA25003515C0 /* Entities */,
+				14ED25D02B81FB61003515C0 /* Entities */,
 				14ED25B32B81D1A2003515C0 /* DTO */,
 				14ED25B22B81D194003515C0 /* WebServices */,
+				14ED25C92B81ECFB003515C0 /* DataAccess */,
 				14ED255D2B81B5B9003515C0 /* AppDelegate.swift */,
 				14ED255F2B81B5B9003515C0 /* SceneDelegate.swift */,
 				14ED25662B81B5BA003515C0 /* Assets.xcassets */,
@@ -191,15 +206,10 @@
 				14ED259F2B81C23E003515C0 /* Memories.swift */,
 				14ED25B52B81D61C003515C0 /* GestureManager.swift */,
 				14ED25B72B81D81F003515C0 /* KeyboardManager.swift */,
+				14ED25C72B81ECCD003515C0 /* FileManager.swift */,
+				14ED25CE2B81F680003515C0 /* StringManager.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		14ED25872B81BA25003515C0 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		14ED258C2B81BD1C003515C0 /* Login */ = {
@@ -246,6 +256,8 @@
 		14ED25B22B81D194003515C0 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				14ED25C22B81EB92003515C0 /* Mocks */,
+				14ED25CC2B81ED72003515C0 /* ServicesHandlers.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -253,6 +265,7 @@
 		14ED25B32B81D1A2003515C0 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				14ED25C52B81EC7F003515C0 /* UserResponse.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -265,6 +278,30 @@
 				14ED25BE2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift */,
 			);
 			path = Transfers;
+			sourceTree = "<group>";
+		};
+		14ED25C22B81EB92003515C0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25C32B81EBB1003515C0 /* userMock.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		14ED25C92B81ECFB003515C0 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25CA2B81ED3B003515C0 /* UserMock.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		14ED25D02B81FB61003515C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				14ED25D12B81FB6D003515C0 /* User.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ED25C42B81EBB1003515C0 /* userMock.json in Resources */,
 				14ED256A2B81B5BA003515C0 /* LaunchScreen.storyboard in Resources */,
 				14ED25672B81B5BA003515C0 /* Assets.xcassets in Resources */,
 				14ED25772B81B5F1003515C0 /* Splash.storyboard in Resources */,
@@ -355,13 +393,18 @@
 				14ED25AB2B81CACB003515C0 /* DashboardView.swift in Sources */,
 				14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */,
 				14ED259E2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift in Sources */,
+				14ED25CF2B81F680003515C0 /* StringManager.swift in Sources */,
 				14ED25912B81BD41003515C0 /* LoginView.swift in Sources */,
+				14ED25CD2B81ED72003515C0 /* ServicesHandlers.swift in Sources */,
 				14ED255E2B81B5B9003515C0 /* AppDelegate.swift in Sources */,
+				14ED25D22B81FB6D003515C0 /* User.swift in Sources */,
 				14ED259A2B81BF4A003515C0 /* OnboardingView.swift in Sources */,
 				14ED25AF2B81CAE1003515C0 /* DashboardViewControllerBuilder.swift in Sources */,
 				14ED25602B81B5B9003515C0 /* SceneDelegate.swift in Sources */,
 				14ED25B62B81D61C003515C0 /* GestureManager.swift in Sources */,
+				14ED25C82B81ECCD003515C0 /* FileManager.swift in Sources */,
 				14ED25952B81BD55003515C0 /* LoginViewControllerBuilder.swift in Sources */,
+				14ED25C62B81EC7F003515C0 /* UserResponse.swift in Sources */,
 				14ED25932B81BD49003515C0 /* LoginViewController.swift in Sources */,
 				14ED25B82B81D81F003515C0 /* KeyboardManager.swift in Sources */,
 				14ED25BB2B81E6AF003515C0 /* TransfersView.swift in Sources */,
@@ -371,6 +414,7 @@
 				14ED25BD2B81E6B7003515C0 /* TransfersViewController.swift in Sources */,
 				14ED25A02B81C23E003515C0 /* Memories.swift in Sources */,
 				14ED25A62B81C9D2003515C0 /* TabBarViewController.swift in Sources */,
+				14ED25CB2B81ED3B003515C0 /* UserMock.swift in Sources */,
 				14ED25802B81B657003515C0 /* SplashViewControllerBuilder.swift in Sources */,
 				14ED25BF2B81E6C1003515C0 /* TransfersViewControllerBuilder.swift in Sources */,
 				14ED25AD2B81CAD8003515C0 /* DashboardViewController.swift in Sources */,

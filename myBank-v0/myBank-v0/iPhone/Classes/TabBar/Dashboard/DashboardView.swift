@@ -10,4 +10,11 @@ import UIKit
 
 class DashboardView: UIView {
     
+    @IBOutlet private weak var lblFullName  : UILabel!
+    @IBOutlet private weak var lblEmail     : UILabel!
+    
+    func setInformationFrom(_ user: User) {
+        self.lblFullName.text   = user.fullname
+        self.lblEmail.text      = user.email.toSecureEmail()
+    }
 }
