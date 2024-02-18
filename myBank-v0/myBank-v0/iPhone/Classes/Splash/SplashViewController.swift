@@ -21,5 +21,6 @@ class SplashViewController: UIViewController {
 extension SplashViewController: SplashViewDelegate {
     func splashViewFinishLottieAnimation(_ view: SplashView) {
         //TODO: do something here
+        print(Configuration.envioronment.info.baseURL)
     }
 }

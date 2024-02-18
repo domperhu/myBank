@@ -17,6 +17,7 @@
 		14ED25802B81B657003515C0 /* SplashViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED257F2B81B657003515C0 /* SplashViewControllerBuilder.swift */; };
 		14ED25832B81B67F003515C0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 14ED25822B81B67F003515C0 /* Lottie */; };
 		14ED25852B81B6A8003515C0 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ED25842B81B6A8003515C0 /* splash_animation.json */; };
+		14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED258A2B81BB15003515C0 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		14ED257D2B81B640003515C0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		14ED257F2B81B657003515C0 /* SplashViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerBuilder.swift; sourceTree = "<group>"; };
 		14ED25842B81B6A8003515C0 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
+		14ED258A2B81BB15003515C0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,9 @@
 		14ED255C2B81B5B9003515C0 /* myBank-v0 */ = {
 			isa = PBXGroup;
 			children = (
+				14ED25862B81BA1D003515C0 /* Helpers */,
 				14ED25712B81B5BD003515C0 /* iPhone */,
+				14ED25872B81BA25003515C0 /* Entities */,
 				14ED255D2B81B5B9003515C0 /* AppDelegate.swift */,
 				14ED255F2B81B5B9003515C0 /* SceneDelegate.swift */,
 				14ED25662B81B5BA003515C0 /* Assets.xcassets */,
@@ -124,6 +128,21 @@
 				14ED25842B81B6A8003515C0 /* splash_animation.json */,
 			);
 			path = Lotties;
+			sourceTree = "<group>";
+		};
+		14ED25862B81BA1D003515C0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14ED258A2B81BB15003515C0 /* Configuration.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14ED25872B81BA25003515C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */,
 				14ED255E2B81B5B9003515C0 /* AppDelegate.swift in Sources */,
 				14ED25602B81B5B9003515C0 /* SceneDelegate.swift in Sources */,
 				14ED257C2B81B623003515C0 /* SplashView.swift in Sources */,
