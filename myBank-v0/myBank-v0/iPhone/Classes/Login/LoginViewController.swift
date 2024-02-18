@@ -44,7 +44,7 @@ extension LoginViewController: LoginViewDelegate {
     }
 }
 
-extension LoginViewController: WBKeyboardManagerDelegate {
+extension LoginViewController: KeyboardManagerDelegate {
     func keyboardManager(_ manager: KeyboardManager, willShow information: KeyboardManager.Information) {
         self.loginView?.keyboardShow(information)
     }

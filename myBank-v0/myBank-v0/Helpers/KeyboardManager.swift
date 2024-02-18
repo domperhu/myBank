@@ -8,16 +8,16 @@
 
 import UIKit
 
-protocol WBKeyboardManagerDelegate: NSObjectProtocol {
+protocol KeyboardManagerDelegate: NSObjectProtocol {
     func keyboardManager(_ manager: KeyboardManager, willShow information: KeyboardManager.Information)
     func keyboardManager(_ manager: KeyboardManager, willHide information: KeyboardManager.Information)
 }
 
 class KeyboardManager {
     
-    private weak var delegate: WBKeyboardManagerDelegate?
+    private weak var delegate: KeyboardManagerDelegate?
     
-    init(delegate: WBKeyboardManagerDelegate) {
+    init(delegate: KeyboardManagerDelegate) {
         self.delegate = delegate
     }
     
