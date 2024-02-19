@@ -107,13 +107,16 @@
                                                                 <constraint firstAttribute="width" secondItem="Jwn-s7-Yu1" secondAttribute="height" id="nH4-TD-vvC"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblMessageError" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-2t-vjd">
-                                                            <rect key="frame" x="78.666666666666686" y="99.666666666666686" width="124" height="20.333333333333329"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblMessageError" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-2t-vjd">
+                                                            <rect key="frame" x="28" y="99.666666666666686" width="225" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="PJl-2t-vjd" firstAttribute="width" secondItem="nMr-tj-1yY" secondAttribute="width" multiplier="0.8" id="k54-Nr-xb4"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>

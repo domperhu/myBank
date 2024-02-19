@@ -37,7 +37,7 @@ class OffersView: UIView {
     }
     
     private func reloadCollectionData(_ arrayData: [Any]) {
-        self.listOffersAdapter.arrayData = arrayData.isEmpty ? ["Error al obtener las ofertas"] : arrayData
+        self.listOffersAdapter.arrayData = arrayData.isEmpty ? ["Sorry, at the moment you do not have offers"] : arrayData
         self.clvOffers.reloadData()
     }
 }
