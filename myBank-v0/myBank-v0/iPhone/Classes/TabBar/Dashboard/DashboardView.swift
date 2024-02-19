@@ -16,6 +16,7 @@ class DashboardView: UIView {
     func setInformationFrom(_ user: User) {
         self.lblFullName.text   = user.fullname
         self.lblEmail.text      = user.email.toSecureEmail()
+        self.lblEmail.text      = user.account.toSecureText()
     }
-    //TODO: Cambiar email por número de cuenta
+    
 }

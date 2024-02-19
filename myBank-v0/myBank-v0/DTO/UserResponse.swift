@@ -12,4 +12,5 @@ struct UserResponse: Decodable {
     let name        : String?
     let lastname    : String?
     let email       : String?
+    let account     : String?
 }

@@ -13,6 +13,7 @@ struct User {
     let name        : String
     let lastname    : String
     let email       : String
+    let account     : String
     
     var fullname: String {
         "\(self.name) \(self.lastname)"
@@ -22,6 +23,7 @@ struct User {
         self.name       = dto.name      ?? ""
         self.email      = dto.email     ?? ""
         self.lastname   = dto.lastname  ?? ""
+        self.account    = dto.account   ?? ""
     }
 }
 
