@@ -47,6 +47,7 @@
 		14ED25CD2B81ED72003515C0 /* ServicesHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25CC2B81ED72003515C0 /* ServicesHandlers.swift */; };
 		14ED25CF2B81F680003515C0 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25CE2B81F680003515C0 /* StringManager.swift */; };
 		14ED25D22B81FB6D003515C0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25D12B81FB6D003515C0 /* User.swift */; };
+		14ED25D62B82C5CF003515C0 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED25D52B82C5CF003515C0 /* ImageDownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		14ED25CC2B81ED72003515C0 /* ServicesHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesHandlers.swift; sourceTree = "<group>"; };
 		14ED25CE2B81F680003515C0 /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		14ED25D12B81FB6D003515C0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14ED25D52B82C5CF003515C0 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				14ED25B72B81D81F003515C0 /* KeyboardManager.swift */,
 				14ED25C72B81ECCD003515C0 /* FileManager.swift */,
 				14ED25CE2B81F680003515C0 /* StringManager.swift */,
+				14ED25D52B82C5CF003515C0 /* ImageDownloadManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				14ED25A32B81C9C0003515C0 /* TabBarViewControllerBuilder.swift in Sources */,
 				14ED25AB2B81CACB003515C0 /* DashboardView.swift in Sources */,
 				14ED258B2B81BB15003515C0 /* Configuration.swift in Sources */,
+				14ED25D62B82C5CF003515C0 /* ImageDownloadManager.swift in Sources */,
 				14ED259E2B81BF5E003515C0 /* OnboardingViewControllerBuilder.swift in Sources */,
 				14ED25CF2B81F680003515C0 /* StringManager.swift in Sources */,
 				14ED25912B81BD41003515C0 /* LoginView.swift in Sources */,

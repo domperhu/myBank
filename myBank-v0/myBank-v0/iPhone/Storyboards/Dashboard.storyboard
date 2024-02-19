@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,11 +37,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-En-fML">
-                                        <rect key="frame" x="329.66666666666669" y="0.3333333333333357" width="39.333333333333314" height="34.333333333333336"/>
+                                        <rect key="frame" x="329.66666666666669" y="10.333333333333329" width="39.333333333333314" height="14"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="plain"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -56,6 +53,7 @@
                             <constraint firstItem="BS0-Ra-373" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="pB7-tP-XvI"/>
                         </constraints>
                         <connections>
+                            <outlet property="btnProfile" destination="hqw-En-fML" id="kWb-Ro-xXa"/>
                             <outlet property="lblEmail" destination="e0R-PL-GkY" id="wCN-JM-EP4"/>
                             <outlet property="lblFullName" destination="lXX-g1-kR0" id="0Lh-Yy-VO1"/>
                         </connections>
@@ -67,7 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
