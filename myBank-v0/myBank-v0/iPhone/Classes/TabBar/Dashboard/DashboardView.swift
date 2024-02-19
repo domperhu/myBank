@@ -10,6 +10,7 @@ import UIKit
 
 class DashboardView: UIView {
     
+    @IBOutlet private weak var btnProfile   : UIButton!
     @IBOutlet private weak var lblFullName  : UILabel!
     @IBOutlet private weak var lblAccount   : UILabel!
     
