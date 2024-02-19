@@ -20,7 +20,11 @@ class DashboardView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
         self.btnProfile.layer.cornerRadius = 0.5 * btnProfile.frame.size.width
+        //self.btnProfile.setImage(UIImage(systemName: "person.circle"), for: .normal)
+        self.btnProfile.imageView?.downloadImageWithThis("https://bit.ly/4bIE4m3", awaitImage: UIImage(systemName: "person.circle"))
 
     }
     
