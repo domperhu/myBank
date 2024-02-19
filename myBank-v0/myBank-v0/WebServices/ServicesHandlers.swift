@@ -12,4 +12,5 @@ struct ServicesHandlers {
     typealias SuccessProcess    = () -> Void
     typealias SuccessMessage    = (_ message: String) -> Void
     typealias GetUserResponse   = (_ userResponse: UserResponse) -> Void
+    typealias GetOffersResponse = (_ offersResponse: OffersResponse) -> Void
 }
