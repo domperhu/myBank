@@ -19,4 +19,14 @@ class DashboardView: UIView {
         self.lblAccount.text    = user.account.toSecureText()
     }
     
+    override func draw(_ rect: CGRect) {
+        self.btnProfile.layer.cornerRadius = 0.5 * btnProfile.frame.size.width
+
+    }
+    
+    
+    @IBAction private func clickBtnProfile(_ sender: UIButton) {
+        
+    }
+    
 }

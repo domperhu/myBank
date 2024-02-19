@@ -14,16 +14,19 @@ struct User {
     let lastname    : String
     let email       : String
     let account     : String
+    let imageUrl    : String
     
     var fullname: String {
         "\(self.name) \(self.lastname)"
     }
+
     
     init(dto: UserResponse) {
         self.name       = dto.name      ?? ""
         self.email      = dto.email     ?? ""
         self.lastname   = dto.lastname  ?? ""
         self.account    = dto.account   ?? ""
+        self.imageUrl   = dto.imageUrl  ?? ""
     }
 }
 

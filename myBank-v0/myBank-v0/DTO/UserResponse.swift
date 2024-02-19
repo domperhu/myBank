@@ -13,4 +13,5 @@ struct UserResponse: Decodable {
     let lastname    : String?
     let email       : String?
     let account     : String?
+    let imageUrl    : String?
 }

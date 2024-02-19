@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BS0-Ra-373">
-                                <rect key="frame" x="12" y="59" width="369" height="34.666666666666657"/>
+                                <rect key="frame" x="12" y="59" width="369" height="39.333333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XG5-cB-bZY">
-                                        <rect key="frame" x="0.0" y="0.0" width="329.66666666666669" height="34.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="2.3333333333333357" width="329.66666666666669" height="34.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblFullName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXX-g1-kR0">
                                                 <rect key="frame" x="0.0" y="0.0" width="329.66666666666669" height="20.333333333333332"/>
@@ -30,7 +30,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblAccount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-PL-GkY">
-                                                <rect key="frame" x="0.0" y="20.333333333333329" width="329.66666666666669" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="20.333333333333336" width="329.66666666666669" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -38,11 +38,18 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-En-fML">
-                                        <rect key="frame" x="329.66666666666669" y="0.3333333333333357" width="39.333333333333314" height="34.333333333333336"/>
+                                        <rect key="frame" x="329.66666666666669" y="0.0" width="39.333333333333314" height="39.333333333333336"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hqw-En-fML" secondAttribute="height" multiplier="1:1" id="u8f-8I-7XZ"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clickBtnProfile:" destination="5EZ-qb-Rvc" eventType="touchUpInside" id="05k-mC-z5D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -56,6 +63,7 @@
                             <constraint firstItem="BS0-Ra-373" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="pB7-tP-XvI"/>
                         </constraints>
                         <connections>
+                            <outlet property="btnProfile" destination="hqw-En-fML" id="Y0X-xh-XIY"/>
                             <outlet property="lblAccount" destination="e0R-PL-GkY" id="b0F-ha-1gi"/>
                             <outlet property="lblFullName" destination="lXX-g1-kR0" id="0Lh-Yy-VO1"/>
                         </connections>
@@ -70,6 +78,9 @@
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
