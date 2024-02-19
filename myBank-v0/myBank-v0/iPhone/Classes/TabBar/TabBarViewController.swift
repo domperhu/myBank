@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setStyle()
-        self.viewControllers = [DashboardViewController.build(), TransfersViewController.build()]
+        self.viewControllers = [DashboardViewController.build(), TransfersViewController.build(), OffersViewController.build()]
     }
     
     private func setStyle() {
